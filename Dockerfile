@@ -2,7 +2,7 @@ FROM bellsoft/liberica-openjdk-alpine:latest
 
 WORKDIR /app
 
-COPY target/*.jar .
+COPY target/.jar .
 
 EXPOSE 8080
 
