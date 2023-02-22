@@ -1,8 +1,8 @@
 FROM bellsoft/liberica-openjdk-alpine:latest
 
-WORKDIR /tmp
+WORKDIR /app
 
-COPY target/note-app-docker.jar target/note-app-docker.jar.original
+COPY target/*.jar .
 
 EXPOSE 8080
 
