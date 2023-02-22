@@ -73,6 +73,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>note-app-docker</finalName>
 	</build>
 
 </project>
