@@ -1,4 +1,9 @@
-FROM openjdk:19
+FROM bellsoft/liberica-openjdk-alpine:latest
+
+WORKDIR /app
+
+COPY target/*.jar .
+
 EXPOSE 8080
-ADD target/note-app-docker.jar note-app-docker.jar
-ENTRYPOINT ["java", "-jar", "/note-app-docker.jar"]
+
+ENTRYPOINT java -jar note-app-docker.jar
